@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Generic Simple Adapter</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+</resources>
