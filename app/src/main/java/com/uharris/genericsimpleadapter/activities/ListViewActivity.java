@@ -2,11 +2,8 @@ package com.uharris.genericsimpleadapter.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -15,8 +12,6 @@ import com.uharris.genericsimpleadapter.entities.Movie;
 import com.uharris.genericsimpleadapter.entities.Search;
 import com.uharris.genericsimpleadapter.services.ServiceHelper;
 import com.uharris.genericsimpleadapter.viewholders.MovieHolder;
-import com.uharris.genericsimpleadapter.viewholders.MovieViewHolder;
-import com.uharris.genericsimpleradapter.BaseRecyclerViewAdapter;
 import com.uharris.genericsimpleradapter.GenericBaseAdapter;
 
 import butterknife.BindView;

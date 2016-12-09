@@ -36,8 +36,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-def siteUrl = 'https://github.com/ICOGroup/AndroidBaseProject'      // Homepage URL of the library
-def gitUrl = 'https://github.com/ICOGroup/AndroidBaseProject.git'   // Git repository URL
+def siteUrl = 'https://github.com/uharris6/Generic-Simple-Adapter'      // Homepage URL of the library
+def gitUrl = 'https://github.com/uharris6/Generic-Simple-Adapter.git'   // Git repository URL
 group = "com.github.uharris6"                                          // Maven Group ID for the artifact
 
 
