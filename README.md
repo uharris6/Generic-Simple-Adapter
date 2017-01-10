@@ -3,12 +3,20 @@
 Generic adapter for RecyclerView, ListView, GridView and Spinner.
  
 ## Setup
-Add Generic Simple Adapter dependency to project level build.gradle.
-
+Step 1. Add the JitPack repository to your build file
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
 ```gradle
 dependencies {
-    compile 'com.github.uharris6:genericsimpleradapter:1.0.0'
-}
+	   compile 'com.github.uharris6:Generic-Simple-Adapter:0.0.4'
+	}
 ```
 ## Usage
 
