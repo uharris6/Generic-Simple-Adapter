@@ -40,13 +40,13 @@ public class SpinnerActivity extends AppCompatActivity {
 
     private void getMovie(String s) {
         ServiceHelper serviceHelper = ServiceHelper.getInstance();
-        Call<Search> call = serviceHelper.getMovieInterface().searchMovies(s);
+        Call<Search> call = serviceHelper.getMovieInterface().searchMovies(s, "a774c20a93911130f62c5a2dc340a492");
         call.enqueue(new Callback<Search>() {
             @Override
             public void onResponse(Call<Search> call, Response<Search> response) {
                 SpinnerAdapter<Movie, MovieDropdownHolder, MovieHolder> adapter = new
                         SpinnerAdapter<Movie, MovieDropdownHolder,
-                                MovieHolder>(SpinnerActivity.this, response.body().getSearch(), R
+                                MovieHolder>(SpinnerActivity.this, response.body().getResults(), R
                                 .layout
                                 .movie_spinner_item, R.layout.movie_item) {
 

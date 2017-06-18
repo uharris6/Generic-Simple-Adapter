@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class ServiceHelper {
 
-    public static final String BASE_URL = "http://www.omdbapi.com";
+    public static final String BASE_URL = "https://api.themoviedb.org/3/";
 
     public static Retrofit retrofit;
 

@@ -42,11 +42,11 @@ public class ListViewActivity extends AppCompatActivity {
 
     private void getMovie(String s) {
         ServiceHelper serviceHelper = ServiceHelper.getInstance();
-        Call<Search> call = serviceHelper.getMovieInterface().searchMovies(s);
+        Call<Search> call = serviceHelper.getMovieInterface().searchMovies(s, "a774c20a93911130f62c5a2dc340a492");
         call.enqueue(new Callback<Search>() {
             @Override
             public void onResponse(Call<Search> call, Response<Search> response) {
-                adapter.setAll(response.body().getSearch());
+                adapter.setAll(response.body().getResults());
             }
 
             @Override

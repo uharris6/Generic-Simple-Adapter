@@ -29,9 +29,9 @@ public class MovieViewHolder extends BaseRecyclerViewHolder<Movie> {
 
     @Override
     protected void configureItem(Movie item) {
-        Glide.with(context).load(item.getPoster()).into(mMovieImage);
+        Glide.with(context).load("https://image.tmdb.org/t/p/w500"+item.getPoster()).into(mMovieImage);
         mMovieTitle.setText(item.getTitle());
-        mMovieYear.setText(item.getYear());
+        mMovieYear.setText(item.getRelease());
     }
 
     public MovieViewHolder(View itemView, Context context) {

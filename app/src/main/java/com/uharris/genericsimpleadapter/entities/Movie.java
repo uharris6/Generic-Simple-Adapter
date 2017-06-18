@@ -8,16 +8,21 @@ import com.google.gson.annotations.SerializedName;
 
 public class Movie {
 
-    @SerializedName("Title")
+    int id;
     String title;
-    @SerializedName("Year")
-    String year;
-    @SerializedName("imdbID")
-    String id;
-    @SerializedName("Type")
-    String type;
-    @SerializedName("Poster")
+    @SerializedName("poster_path")
     String poster;
+    String overview;
+    @SerializedName("release_date")
+    String release;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -27,35 +32,27 @@ public class Movie {
         this.title = title;
     }
 
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getPoster() {
         return poster;
     }
 
     public void setPoster(String poster) {
-        this.poster = poster;
+        this.poster = "https://image.tmdb.org/t/p/w500" + poster;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public String getRelease() {
+        return release;
+    }
+
+    public void setRelease(String release) {
+        this.release = release;
     }
 }

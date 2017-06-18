@@ -12,6 +12,6 @@ import retrofit2.http.Query;
 
 public interface MovieService {
 
-    @GET("/")
-    Call<Search> searchMovies(@Query("s") String search);
+    @GET("search/movie")
+    Call<Search> searchMovies(@Query("query") String search , @Query("api_key") String apiKey);
 }

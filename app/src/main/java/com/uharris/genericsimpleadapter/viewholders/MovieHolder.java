@@ -35,8 +35,8 @@ public class MovieHolder extends GenericBaseHolder<Movie> {
 
     @Override
     protected void configureItem(Movie item) {
-        Glide.with(view.getContext()).load(item.getPoster()).into(mMovieImage);
+        Glide.with(view.getContext()).load("https://image.tmdb.org/t/p/w500"+item.getPoster()).into(mMovieImage);
         mMovieTitle.setText(item.getTitle());
-        mMovieYear.setText(item.getYear());
+        mMovieYear.setText(item.getRelease());
     }
 }
