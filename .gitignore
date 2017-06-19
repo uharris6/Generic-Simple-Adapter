@@ -10,7 +10,6 @@
 **/*.iml
 local.properties
 gradle.properties
-gradlew*
 # Ignore Gradle GUI config
 gradle-app.setting
 
