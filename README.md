@@ -15,7 +15,7 @@ allprojects {
 Step 2. Add the dependency
 ```gradle
 dependencies {
-	   compile 'com.github.uharris6:Generic-Simple-Adapter:0.0.4'
+	   compile 'com.github.uharris6:Generic-Simple-Adapter:0.0.6'
 	}
 ```
 ## Usage
