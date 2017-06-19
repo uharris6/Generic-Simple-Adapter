@@ -37,7 +37,7 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.0.1'
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
 
-    compile 'com.github.uharris6:Generic-Simple-Adapter:0.0.4'
+    compile project(":genericsimpleradapter")
 
     testCompile 'junit:junit:4.12'
 }
